@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Portfolio Tracker</h1>
+        
+        <div class="add-stock-form">
+            <input type="text" id="stockSymbol" placeholder="Enter stock symbol (e.g., AAPL)">
+            <input type="number" id="stockQuantity" placeholder="Quantity">
+            <button onclick="addStock()">Add Stock</button>
+        </div>
+
+        <div class="portfolio-summary">
+            <h2>Portfolio Summary</h2>
+            <div class="total-value">Total Value: $<span id="totalValue">0.00</span></div>
+        </div>
+
+        <div class="stock-list">
+            <h2>Your Stocks</h2>
+            <div id="stocksContainer"></div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="portfolioChart"></canvas>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html
